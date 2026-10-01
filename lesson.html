@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript тапсырмалары</title>
+</head>
+<body>
+
+    <script>
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+function countVowels(text) {
+    let count = 0;
+    let vowels = "аәеёиоөұүыіэюя";
+
+    for (let char of text.toLowerCase()) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+
+    alert("Дауысты дыбыстар саны:", count);
+}
+
+let text = prompt("Жол енгізіңіз:");
+countVowels(text);
+
+let day = prompt("Аптаның күнін енгізіңіз:");
+
+if (day === "сенбі" || day === "жексенбі") {
+    alert("Бұл демалыс күні.");
+} else {
+    alert("Бұл жұмыс күні.");
+}
+    </script>
+
+</body>
+</html>
